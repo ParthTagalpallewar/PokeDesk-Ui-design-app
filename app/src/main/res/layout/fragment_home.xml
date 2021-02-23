@@ -24,7 +24,7 @@
             android:layout_marginEnd="-90dp"
             android:adjustViewBounds="true"
             android:alpha="0.10"
-            android:background="@drawable/pokeball"
+            android:background="@drawable/home_book"
             android:tint="@color/white" />
 
         <View
@@ -38,7 +38,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="220dp"
         android:background="@android:color/transparent"
         app:elevation="0dp">
 
@@ -82,9 +82,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
-                        android:gravity="center"
                         android:layout_marginBottom="16dp"
                         android:background="@drawable/background_search_bar"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -97,8 +97,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="16dp"
-                            android:textSize="16sp"
-                            android:text="@string/main_search" />
+                            android:text="Search For Books"
+                            android:textSize="16sp" />
 
                     </LinearLayout>
                 </androidx.appcompat.widget.Toolbar>
@@ -121,6 +121,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Categories"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/indigo"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewMenu"
