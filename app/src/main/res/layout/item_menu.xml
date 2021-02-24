@@ -24,7 +24,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:fontFamily="@font/circularstd_medium"
-        tools:text="@string/app_name" />
+        tools:text="Category" />
 
     <ImageView
         android:layout_width="96dp"
@@ -35,7 +35,7 @@
         android:layout_marginBottom="-16dp"
         android:adjustViewBounds="true"
         android:alpha="0.25"
-        android:src="@drawable/pokeball"
+        android:src="@drawable/home_book"
         android:tint="@color/white" />
 
 </RelativeLayout>
